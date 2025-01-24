@@ -86,7 +86,7 @@ int main(int argc, char **argv) {
         {
             WSACleanup();
             closesocket(remote_socket);
-            error("send() failed\n");
+            error("Falha ao enviar mensagem :(");
         }
     } while(strcmp(message, MENSAGEM_PARA_SAIR) != 0); // envia "#sair" para o servidor
 
